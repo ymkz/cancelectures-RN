@@ -5,6 +5,9 @@
 > 島根大学の休講情報を表示するアプリケーション(*`alpha build`*)です。  
 以前開発したChrome Extension版の実装を改良し、ネイティブというよりリーチできる範囲のひろいプラットフォームに向けて開発を行いました。  
 iOS/Androidへの両対応と、自分の持つWeb Front-endの技術や知識を活かすために`react-native`を用いています。  
+アプリケーションは`create-react-native-app`を用いて作成され、expoでpublishされています。  
+iOS/Androidの端末で`expo client`をインストールしている方なら`@ymkz/cancelectures`を追加することで誰でもアクセス可能です。  
+フィードバックのコメントやPullRequstなども歓迎しています。  
 
 
 ## 課題
