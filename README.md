@@ -13,7 +13,5 @@ iOS/Androidの端末で`expo client`をインストールしている方なら`@
 ## 課題
 
 - [ ] 現在はComponentのmountの度に休講情報をすべて取りにいってしまうので、リクエストを減らすために休講情報データの永続化とAPIリクエストのタイミングを最適化する [#1](https://github.com/ymkz/cancelectures-RN/issues/1)
-- [ ] 使用しているライブラリのライセンス表記追加 [#2](https://github.com/ymkz/cancelectures-RN/issues/2)
-- [ ] 開発者情報のリンク追加 [#3](https://github.com/ymkz/cancelectures-RN/issues/3)
 - [ ] Expand ViewのUIデザイン最適化/アニメーション付加によるよりリッチなUXの提供 [#4](https://github.com/ymkz/cancelectures-RN/issues/4)
 - [ ] データが0件の場合のViewの作成と分岐処理 [#5](https://github.com/ymkz/cancelectures-RN/issues/5)

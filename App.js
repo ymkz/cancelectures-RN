@@ -13,6 +13,7 @@ import Lectures from './src/containers/Lectures'
 import Setting from './src/containers/Setting'
 
 import NavIcon from './src/components/NavIcon'
+import Web from './src/components/Web'
 
 const RouterWithRedux = connect()(Router)
 const store = compose(
@@ -42,6 +43,7 @@ export default class App extends Component {
             <Scene key='root'>
               <Scene key='lectures' title='休講情報' component={Lectures} renderLeftButton={NavIcon} />
               <Scene key='setting' title='設定' component={Setting} />
+              <Scene key='web' title='開発者' component={Web} />
             </Scene>
           </RouterWithRedux>
         </Provider>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, View, ScrollView, Text } from 'react-native'
 import { connect } from 'react-redux'
 import { List, ListItem } from 'react-native-elements'
+import { Actions } from 'react-native-router-flux'
 import { update } from '../ducks/setting'
 
 const list = [
@@ -48,11 +49,6 @@ const list = [
 ]
 
 class Setting extends Component {
-  handleChangeSwitch = (status, item) => {
-    console.log(status, item)
-    this.props.dispatch(update({ group: item.group, status: status }))
-  }
-
   render () {
     return (
       <View style={styles.container}>
@@ -63,15 +59,27 @@ class Setting extends Component {
           <List>
             {list.map((item, i) => (
               <ListItem
-                key={i}
+                key={item.group}
                 title={item.title}
                 leftIcon={{ name: item.icon }}
-                onSwitch={(status) => this.handleChangeSwitch(status, item)}
+                onSwitch={(status) => this.props.dispatch(update({ group: item.group, status: status }))}
                 switched={this.props[item.group]}
                 switchButton
                 hideChevron
               />
             ))}
+          </List>
+          <View style={styles.label}>
+            <Text style={styles.text}>開発者</Text>
+          </View>
+          <List>
+            <ListItem
+              key='developer'
+              title='Kazuya Yamashita'
+              subtitle='developer'
+              leftIcon={{ name: 'face' }}
+              onPress={Actions.web}
+            />
           </List>
         </ScrollView>
       </View>
