@@ -37,7 +37,7 @@ const list = [
     icon: 'computer'
   },
   {
-    title: '生物資源学部',
+    title: '生物資源科学部',
     group: 'biology',
     icon: 'language'
   },

@@ -40,7 +40,7 @@ export default class App extends Component {
       return (
         <Provider store={store}>
           <RouterWithRedux>
-            <Scene key='root'>
+            <Scene key='root' navigationBarStyle={{ backgroundColor: '#fff' }}>
               <Scene key='lectures' title='休講情報' component={Lectures} renderLeftButton={NavIcon} />
               <Scene key='setting' title='設定' component={Setting} />
               <Scene key='web' title='開発者' component={Web} />

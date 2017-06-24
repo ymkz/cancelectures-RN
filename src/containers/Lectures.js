@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, ListView } from 'react-native'
+import { StyleSheet, View, ListView, Text } from 'react-native'
 import { connect } from 'react-redux'
 import cheerio from 'cheerio-without-node-native'
 import Row from '../components/Row'
 import Separator from '../components/Separator'
 import SectionHeader from '../components/SectionHeader'
 import { add } from '../ducks/lectures'
+import Zero from '../components/Zero'
 
 class Main extends Component {
   constructor (props) {
@@ -86,13 +87,16 @@ class Main extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <ListView
-          enableEmptySections
-          dataSource={this.state.lectures}
-          renderSeparator={Separator}
-          renderRow={rowData => <Row lecture={rowData} />}
-          renderSectionHeader={(senctionData, date) => <SectionHeader date={date} />}
-        />
+        {this.props.lectures.length > 0
+          ? <ListView
+            enableEmptySections
+            dataSource={this.state.lectures}
+            renderSeparator={Separator}
+            renderRow={rowData => <Row lecture={rowData} />}
+            renderSectionHeader={(senctionData, date) => <SectionHeader date={date} />}
+            />
+        : <Zero />
+      }
       </View>
     )
   }
