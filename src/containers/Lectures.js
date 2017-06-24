@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, ListView, Text } from 'react-native'
+import { StyleSheet, View, ListView } from 'react-native'
 import { connect } from 'react-redux'
 import cheerio from 'cheerio-without-node-native'
 import Row from '../components/Row'
@@ -35,28 +35,28 @@ class Main extends Component {
     })
   }
 
-  fetchLectures = (page) => {
-    fetch(`http://www.kougi.shimane-u.ac.jp/selectweb/conduct_list.asp?abspage=${page}`).then(response => {
-      return response.text()
-    }).then(text => {
+  fetchLectures = async (page) => {
+    try {
+      const response = await fetch(`http://www.kougi.shimane-u.ac.jp/selectweb/conduct_list.asp?abspage=${page}`)
+      const text = await response.text()
       const $ = cheerio.load(text)
       const current = Number($('.nowpagenum').text())
       const pages = $('.pagenum').map((i, e) => $(e).text()).get().map(v => Number(v))
       const raw = $('.DataField').map((i, e) => $(e).text()).get()
       const array = raw.map(v => v === '' ? 'N/A' : v)
-      const data = this.mapArrayToObject(array)
+      const data = this.mapArrayToObjectArray(array)
       this.props.dispatch(add(data))
       if (current < Math.max.apply(null, pages)) {
         this.fetchLectures(current + 1)
       } else {
         console.log('finish!')
       }
-    }).catch(error => {
-      console.log(error)
-    })
+    } catch (exeption) {
+      console.log(exeption)
+    }
   }
 
-  mapArrayToObject (array) {
+  mapArrayToObjectArray (array) {
     let result = []
     for (let i = 0; i < array.length; i = i + 8) {
       result.push({
@@ -94,9 +94,9 @@ class Main extends Component {
             renderSeparator={Separator}
             renderRow={rowData => <Row lecture={rowData} />}
             renderSectionHeader={(senctionData, date) => <SectionHeader date={date} />}
-            />
-        : <Zero />
-      }
+          />
+          : <Zero />
+        }
       </View>
     )
   }
