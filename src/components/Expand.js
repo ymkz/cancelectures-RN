@@ -13,10 +13,6 @@ export default ({ lecture }) => (
       <Text style={styles.info}>時限: {lecture.time}</Text>
     </View>
     <View style={styles.subcontent}>
-      <Icon name='class' size={16} color='#424242' />
-      <Text style={styles.info}>グループ: {lecture.group}</Text>
-    </View>
-    <View style={styles.subcontent}>
       <Icon name='room' size={16} color='#424242' />
       <Text style={styles.info}>教室: {lecture.room}</Text>
     </View>
