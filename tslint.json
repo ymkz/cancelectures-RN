@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-react",
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "interface-name": false,
+    "member-access": false,
+    "prettier": [
+      true,
+      {
+        "semi": false,
+        "singleQuote": true
+      }
+    ]
+  }
+}
