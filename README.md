@@ -11,7 +11,7 @@
   </a>
 </p>
 
-<section>
+<section style="display: flex;justify-content: space-around;">
   <img width="300" src="assets/cancelectures_native_1.png">
   <img width="300" src="assets/cancelectures_native_2.png">
 </section>
