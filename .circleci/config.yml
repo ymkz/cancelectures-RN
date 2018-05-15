@@ -8,15 +8,15 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - packages-{{ checksum "package-lock.json" }}
+          - packages-{{ checksum "yarn.lock" }}
           - packages-
       - run:
           name: Install packages
-          command: npm install
+          command: yarn install
       - save_cache:
-          key: packages-{{ checksum "package-lock.json" }}
+          key: packages-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
       - run:
           name: Lint
-          command: npm run lint
+          command: yarn run lint
