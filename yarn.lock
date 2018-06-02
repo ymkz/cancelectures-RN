@@ -565,9 +565,9 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@types/expo@26.0.3":
-  version "26.0.3"
-  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-26.0.3.tgz#ae2a1b00a4540d717f235222194c62a8e58d73c0"
+"@types/expo@26.0.4":
+  version "26.0.4"
+  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-26.0.4.tgz#b08c46f6422cfbb67bdac69d5daf9a6d1086e508"
   dependencies:
     "@types/fbemitter" "*"
     "@types/react" "*"
