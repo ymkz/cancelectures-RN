@@ -4227,9 +4227,9 @@ react-native-tab-view@^0.0.70:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-typescript-transformer@1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.5.tgz#3e3b94fca705bcf40c7a99540bca47598f75a01b"
+react-native-typescript-transformer@1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.9.tgz#a8724eee5d787c4f88da50cf2e091c53be2121ee"
   dependencies:
     chalk "^2.4.0"
     find-root "^1.1.0"
