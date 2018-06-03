@@ -31,7 +31,7 @@
     "@types/expo__vector-icons": "6.2.2",
     "@types/react": "16.3.16",
     "@types/react-native": "0.55.13",
-    "husky": "1.0.0-rc.6",
+    "husky": "1.0.0-rc.8",
     "prettier": "1.13.4",
     "react-native-typescript-transformer": "1.2.5",
     "tslint": "5.10.0",
