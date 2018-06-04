@@ -592,11 +592,15 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
-"@types/react-native@*", "@types/react-native@0.55.13":
+"@types/react-native@*":
   version "0.55.13"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.55.13.tgz#5ff5243998f06aaa656d7858ddfa7cdd6ab63c57"
   dependencies:
     "@types/react" "*"
+
+"@types/react-native@0.55.16":
+  version "0.55.16"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.55.16.tgz#992304c2228b276c10d2b4460d824477b25d0306"
 
 "@types/react@*":
   version "16.3.14"
