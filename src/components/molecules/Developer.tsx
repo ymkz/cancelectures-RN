@@ -35,6 +35,10 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     backgroundColor: colors.white,
+    borderBottomColor: colors.darkGray,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderTopColor: colors.darkGray,
+    borderTopWidth: StyleSheet.hairlineWidth,
     flexDirection: 'row',
     marginTop: 32,
     padding: 16
