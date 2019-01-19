@@ -575,13 +575,14 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@types/expo@26.0.4":
-  version "26.0.4"
-  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-26.0.4.tgz#b08c46f6422cfbb67bdac69d5daf9a6d1086e508"
+"@types/expo@31.0.8":
+  version "31.0.8"
+  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-31.0.8.tgz#e5e8b9a88087220e6cfa10a8ec940587eaefcf1d"
   dependencies:
     "@types/fbemitter" "*"
     "@types/react" "*"
     "@types/react-native" "*"
+    react-native-maps "*"
 
 "@types/expo__vector-icons@6.2.2":
   version "6.2.2"
@@ -4260,6 +4261,10 @@ react-native-gesture-handler@1.0.0-alpha.41:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
     prop-types "^15.5.10"
+
+react-native-maps@*:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.23.0.tgz#edbfdcad0e42190627eb1c8067eaba5965c8f81e"
 
 react-native-maps@0.21.0:
   version "0.21.0"
