@@ -25,7 +25,7 @@
     "react-native-router-flux": "4.0.0-beta.31"
   },
   "devDependencies": {
-    "@commitlint/cli": "7.0.0",
+    "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.0.1",
     "@types/expo": "26.0.4",
     "@types/expo__vector-icons": "6.2.2",
