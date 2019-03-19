@@ -550,7 +550,13 @@
   dependencies:
     find-up "^2.1.0"
 
-"@expo/vector-icons@6.3.1", "@expo/vector-icons@^6.3.1":
+"@expo/vector-icons@10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.0.1.tgz#dbb0a9ab68b53aa6cbbc04b48421e4db862535d9"
+  dependencies:
+    lodash "^4.17.4"
+
+"@expo/vector-icons@^6.3.1":
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-6.3.1.tgz#ffb97cc2343e4a330b44ce3063ee7c8571a6a50d"
   dependencies:
